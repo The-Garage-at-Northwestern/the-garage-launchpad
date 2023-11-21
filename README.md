@@ -1,17 +1,25 @@
+# The Garage Launchpad
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run the development server :
+First, clone the repo and install the packages:
+
+```bash
+npm install
+```
+
+Second, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+
+If you run into issues, make sure your node.js is updated to a stable version (lts or long term support).
+
+```bash
+npm install node@lts
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

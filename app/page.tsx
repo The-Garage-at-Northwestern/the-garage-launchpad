@@ -168,16 +168,16 @@ export default function Home() {
         </div>
         {/* Need to put max width to prevent overflow */}
         <div className="grid grid-cols-4 mb-32">
-          <div className="mx-2 border-white border p-4 ">
+          <div className="mx-2 border-white border p-4 h-16 max-w-[393px]">
             <h1 className="text-sm text-center">1 mission</h1>
           </div>
-          <div className="mx-2 border-white border p-4 h-16">
+          <div className="mx-2 border-white border p-4 h-16 max-w-[393px]">
             <h1 className="text-sm text-center">1 story</h1>
           </div>
-          <div className="mx-2 border-white border p-4 h-16">
+          <div className="mx-2 border-white border p-4 h-16 max-w-[393px]">
             <h1 className="text-sm text-center">1 small win</h1>
           </div>
-          <div className="mx-2 border-white border p-4 h-16">
+          <div className="mx-2 border-white border p-4 h-16 max-w-[393px]">
             <h1 className="text-sm text-center">weekly growth</h1>
           </div>
 

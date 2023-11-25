@@ -22,11 +22,17 @@ If you run into issues, make sure your node.js is updated to a stable version (l
 npm install node@lts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3005](http://localhost:3005) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Nextjs Routing and Layouts
+
+Checkout [https://www.builder.io/blog/layouts-in-nextjs-13-visual](https://www.builder.io/blog/layouts-in-nextjs-13-visual) for a guide on layouts.
+
+Also checkout [https://www.builder.io/blog/next-13-app-router](https://www.builder.io/blog/next-13-app-router) for a guide on routes.
 
 ## Learn More
 

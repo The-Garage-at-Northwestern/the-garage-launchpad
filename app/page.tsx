@@ -42,7 +42,7 @@ export default function Home() {
         {/* Login and Signup Buttons */}
         <div >
           <Link href="" className="absolute text-center bottom-10 left-40 mx-4 w-32 py-2 text-white bg-indigo-800 rounded-md font-bold">Login</Link>
-          <Link href="" className="absolute text-center bottom-10 left-0 mx-4 w-32 py-2 text-black bg-white rounded-md font-bold">Sign me up</Link>
+          <Link href="https://airtable.com/app23FYGQuxKwGxDO/shrhhmOtSGfL5Qze7" className="absolute text-center bottom-10 left-0 mx-4 w-32 py-2 text-black bg-white rounded-md font-bold">Sign me up</Link>
         </div>
         {/* Landing Copy */}
         <div className="w-2/5 top-8 left-8 relative">

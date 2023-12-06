@@ -1,19 +1,21 @@
 // HOME PAGE
 import Image from "next/image";
+// Rest of the code remains unchanged
 import BG from ".//assets/images/HomeBG.png";
 import NU from ".//assets/images/WhiteNU.png"
 import Link from "next/link";
-import C1 from ".//assets/images/C1.png"
-import C2 from ".//assets/images/C2.png"
-import C3 from ".//assets/images/C3.png"
-import C4 from ".//assets/images/C4.png"
-import C5 from ".//assets/images/C5.png"
-import I1 from ".//assets/images/Image1.png"
-import I2 from "./assets/images/Image2.png"
-import W1 from ".//assets/images/W1.png"
-import W2 from ".//assets/images/W2.png"
-import W3 from ".//assets/images/W3.png"
-import W4 from ".//assets/images/W4.png"
+import C1 from ".//assets/images/C1.png";
+import C2 from ".//assets/images/C2.png";
+import C3 from ".//assets/images/C3.png";
+import C4 from ".//assets/images/C4.png";
+import C5 from ".//assets/images/C5.png";
+import I1 from ".//assets/images/Image1.png";
+import I2 from "./assets/images/Image2.png";
+import W1 from ".//assets/images/W1.png";
+import W2 from ".//assets/images/W2.png";
+import W3 from ".//assets/images/W3.png";
+import W4 from ".//assets/images/W4.png";
+import Card from "./h_carousel_card";
 
 export default function Home() {
   return (
@@ -48,7 +50,6 @@ export default function Home() {
         <div className="w-2/5 top-8 left-8 relative">
           <h1 className="text-7xl font-bold text-white">IDEA TO CREATION</h1>
           <h1 className="text-7xl font-bold text-white">
-            {" "}
             IN 1 QUARTER. YOU DOWN?
           </h1>
         </div>
@@ -63,57 +64,29 @@ export default function Home() {
           <h1 className="col-span-2 px-8 text-5xl font-bold">It all begins with tinkering.<br />In The Garage.</h1>
           <h1 className="text-base px-8 ">take any idea you're excited about, figure out how to bring it to life, and turn it into something that people care about — alongside other student founders building just like you.</h1>
         </div>
-        {/* Carousel Images */}
-        <div className="flex flex-row ">
-          <div className="mx-1">
-            <Image
-              alt="Person 1"
-              src={C2}
-            />
-          </div>
-          <div className="mx-1">
-            <Image
-              alt="Person 2"
-              src={C2}
-            />
-          </div>
-          <div className="mx-1">
-            <Image
-              alt="Person 3"
-              src={C3}
-            />
-          </div>
-          <div className="mx-1">
-            <Image
-              alt="Person 4"
-              src={C4}
-            />
-          </div>
-          <div className="mx-1">
-            <Image
-              alt="Person 5"
-              src={C4}
-            />
-          </div>
-        </div>
-        {/* Carousel Descriptions */}
-        <div className="grid grid-cols-5 mb-32 text-center">
-          <div className="mx-1 border-white border p-2 h-16">
-            <h1 className="text-sm ">built software for plant manufacturers</h1>
-          </div>
-          <div className="mx-1 border-white border p-2 h-16">
-            <h1 className="text-sm ">we made a game to help teach music to students</h1>
-          </div>
-          <div className="mx-1 border-white border p-2 h-16">
-            <h1 className="text-sm ">we built an easy way for to rent and share household items</h1>
-          </div>
-          <div className="mx-1 border-white border p-2 h-16">
-            <h1 className="text-sm ">I built a bra for women with limited mobility</h1>
-          </div>
-          <div className="mx-1 border-white border p-2 h-16">
-            <h1 className="text-sm ">built software for plant manufacturers</h1>
-          </div>
-
+      
+        {/* Carousel*/}
+        <div className="flex flex-row text-center mb-16 place-content-center">
+          <Card 
+            image = {C2}
+            text= "built software for plant manufacturers"
+          />
+          <Card 
+            image = {C2}
+            text= "we made a game to help teach music to students"
+          />
+          <Card 
+            image = {C3}
+            text= "we built an easy way for to rent and share household items"
+          />
+          <Card 
+            image = {C4}
+            text= "I built a bra for women with limited mobility"
+          />
+          <Card 
+            image = {C4}
+            text= "built software for plant manufacturers"
+          />
         </div>
       </section>
 
@@ -130,8 +103,9 @@ export default function Home() {
         </div>
         {/* First Large Image */}
         {/* Need to fix when image is maxed and window screen too large */}
-        <div>
+        <div >
           <Image
+            
             src={I1}
             alt="1st Image"
           />
@@ -148,47 +122,23 @@ export default function Home() {
           <h1 className="text-base px-8">it's pretty simple. you pick your own idea, build it, get feedback, and iterate. alongside other students. we'll provide support, but our main goal is to just get you going and make progress.</h1>
         </div>
         {/* How It Works Images */}
-        <div className="flex flex-row text-white text-center">
-          <div className="mx-2">
-            <Image
-              alt="Person 1"
-              src={W1}
+        <div className="flex flex-row text-white text-center mb-16 place-content-center">
+          <Card 
+              image = {W1}
+              text= "1 mission"
             />
-          </div>
-          <div className="mx-2">
-            <Image
-              alt="Person 2"
-              src={W2}
+            <Card 
+              image = {W2}
+              text= "1 story"
             />
-          </div>
-          <div className="mx-2">
-            <Image
-              alt="Person 3"
-              src={W3}
+            <Card 
+              image = {W3}
+              text= "1 small win"
             />
-          </div>
-          <div className="mx-2">
-            <Image
-              alt="Person 4"
-              src={W4}
+            <Card 
+              image = {W4}
+              text= "weekly growth"
             />
-          </div>
-        </div>
-        {/* How It Works Descriptions */}
-        {/* Need to fix size of description boxes when images are maxed */}
-        <div className="grid grid-cols-4 mb-32">
-          <div className="mx-2 border-white border p-4 h-16 max-w-[393px]">
-            <h1 className="text-sm text-center">1 mission</h1>
-          </div>
-          <div className="mx-2 border-white border p-4 h-16 max-w-[393px]">
-            <h1 className="text-sm text-center">1 story</h1>
-          </div>
-          <div className="mx-2 border-white border p-4 h-16 max-w-[393px]">
-            <h1 className="text-sm text-center">1 small win</h1>
-          </div>
-          <div className="mx-2 border-white border p-4 h-16 max-w-[393px]">
-            <h1 className="text-sm text-center">weekly growth</h1>
-          </div>
 
         </div>
       </section>

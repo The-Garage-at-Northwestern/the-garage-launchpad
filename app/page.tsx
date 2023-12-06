@@ -93,9 +93,9 @@ export default function Home() {
       {/* ############################################################################## */}
       {/* A separate section below the carousels for explanation of the program */}
       {/* ############################################################################## */}
-      <section className="border border-white">
+      <section className="border border-white relative">
         {/* Second Text */}
-        <div className="flex flex-col bg-black text-white pb-16 pt-4">
+        <div className="relative flex flex-col bg-black text-white pb-16 pt-4">
           <div className="grid grid-cols-3">
             <h1 className="col-span-2 px-8 py-4 text-5xl font-bold">Your progress is up to you.</h1>
             <h1 className="text-base px-8 py-4">so we won't hold your hand nor force you to make progress on your idea. it's up to you. it will require commitment to yourself to see it through.</h1>
@@ -103,11 +103,13 @@ export default function Home() {
         </div>
         {/* First Large Image */}
         {/* Need to fix when image is maxed and window screen too large */}
-        <div >
+        <div className="relative h-screen w-full">
           <Image
-            
             src={I1}
             alt="1st Image"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center"
           />
         </div>
       </section>
@@ -146,9 +148,9 @@ export default function Home() {
       {/* ############################################################################## */}
       {/* A separate section for the last photo and text */}
       {/* ############################################################################## */}
-      <section className="border border-white">
+      <section className="relative border border-white">
         {/* Fourth Text */}
-        <div className="flex flex-col bg-black text-white pb-16 pt-4">
+        <div className="relative flex flex-col bg-black text-white pb-16 pt-4">
           <div className="grid grid-cols-3">
             <h1 className="col-span-2 px-8 py-4 text-5xl font-bold">You're not alone.<br />Build with others irl.</h1>
             <h1 className="text-base px-8 py-4">meet up with other student founders to share wins, losses, and cheat codes to take your idea to the next level.</h1>
@@ -156,10 +158,13 @@ export default function Home() {
         </div>
         {/* Second Image */}
         {/* Need to fix when image is maxed and window screen too big */}
-        <div>
+        <div className="relative h-screen w-full">
           <Image
             src={I2}
             alt="2nd Image"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center"
           />
         </div>
       </section>

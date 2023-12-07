@@ -1,6 +1,5 @@
 // HOME PAGE
 import Image from "next/image";
-// Rest of the code remains unchanged
 import BG from ".//assets/images/HomeBG.png";
 import NU from ".//assets/images/WhiteNU.png"
 import Link from "next/link";

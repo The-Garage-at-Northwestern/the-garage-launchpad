@@ -1,4 +1,5 @@
 // HOME PAGE
+
 import Image from "next/image";
 import BG from ".//assets/images/HomeBG.png";
 import NU from ".//assets/images/WhiteNU.png"
@@ -16,12 +17,14 @@ import W3 from ".//assets/images/W3.png";
 import W4 from ".//assets/images/W4.png";
 import Card from "./h_carousel_card";
 
+
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen basis-full">
       {/* ############################################################################## */}
       {/* Landing Section */}
       {/* ############################################################################## */}
+
       <section className="relative h-screen w-full">
         {/* NU|The Garage Logo */}
         <Image
@@ -166,6 +169,7 @@ export default function Home() {
             objectPosition="center"
           />
         </div>
+
       </section>
     </main>
   );
